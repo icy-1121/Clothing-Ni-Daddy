@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.hero {
+  height: 250px;
+  background: linear-gradient(to right, #000, #555);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0 0 0;
+}
+
+.shop, .cart {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search button {
+  padding: 8px 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.categories button {
+  margin: 0 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.categories button:hover {
+  background-color: #444;
+}
+
+.products {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.product p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  color: #000;
+}
+
+.product button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #444;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.cart-item button {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background: #c9302c;
+}
+
+.cart p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .hero {
+    height: 200px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .categories button {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+  }
+}
