@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing ni Daddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Since 2026</h1>
+    <p>Simple Filipino streetwear</p>
+  </header>
+
+  <section class="shop">
+    <h2>Shop</h2>
+    <div class="search">
+      <input type="text" id="searchBox" placeholder="Search products...">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+    <div class="categories">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('tops')">Tops</button>
+      <button onclick="filterProducts('bottoms')">Bottoms</button>
+      <button onclick="filterProducts('outerwear')">Outerwear</button>
+      <button onclick="filterProducts('accessories')">Accessories</button>
+    </div>
+    <div class="products" id="productContainer"></div>
+  </section>
+
+  <section class="cart">
+    <h2>Cart (<span id="cartCount">0</span> items)</h2>
+    <div id="cartItemsContainer"></div>
+    <p>Total: ₱<span id="totalPrice">0</span></p>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Proceed to Checkout</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
