@@ -148,6 +148,42 @@ body {
   font-weight: bold;
 }
 
+/* Improved styles for Clear Cart and Proceed to Checkout buttons */
+.clear-cart-btn {
+  background-color: #d9534f; /* Red for "clear/delete" action */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.clear-cart-btn:hover {
+  background-color: #c9302c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-btn {
+  background-color: #5cb85c; /* Green for "proceed" action */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.checkout-btn:hover {
+  background-color: #4cae4c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
   .hero {
@@ -163,5 +199,9 @@ body {
     display: block;
     margin: 5px 0;
     width: 100%;
+  }
+  .clear-cart-btn, .checkout-btn {
+    width: 100%;
+    margin: 5px 0;
   }
 }
